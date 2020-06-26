@@ -4,15 +4,15 @@ import datetime
 def print_header():
     print('---------------------------------------------')
     print('    BIRTHDAY APP')
-    print('---------------------------------------------')
+    print('---------------------------------------------\n')
     print()
 
 
 def get_birthday_from_user():
-    print('when where you born?: ')
-    year = int(input('Year [YYYY]: '))
-    month = int(input('Month [MM]: '))
-    day = int(input('Day [DD]: '))
+    print('when where you born?: \n')
+    year = int(input('Year [YYYY]: \n'))
+    month = int(input('Month [MM]: \n'))
+    day = int(input('Day [DD]: \n'))
 
     birthday = datetime.date(year, month, day)
     return birthday
@@ -27,11 +27,11 @@ def compute_days_between_dates(original_date, target_date):
 
 def print_birthday_info(days):
     if days < 0:
-        print("You had your birthday {} days ago this year.".format(-days))
+        print(f"\nYou had your birthday {-days} days ago this year.")
     elif days > 0:
-        print("Your birthday is in {} days!".format(days))
+        print(f"\nYour birthday is in {days} days!")
     else:
-        print("Happy Birthday!")
+        print("\nHappy Birthday!")
 
 
 def main():
