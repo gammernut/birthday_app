@@ -1,11 +1,7 @@
+
 import datetime
 
-
-def print_header():
-    print('---------------------------------------------')
-    print('    BIRTHDAY APP')
-    print('---------------------------------------------\n')
-    print()
+import utill
 
 
 def get_birthday_from_user():
@@ -35,7 +31,7 @@ def print_birthday_info(days):
 
 
 def main():
-    print_header()
+    utill.print_header(code_name='BIRTHDAY APP')
     bday = get_birthday_from_user()
     today = datetime.date.today()
     number_of_days = compute_days_between_dates(bday, today)
