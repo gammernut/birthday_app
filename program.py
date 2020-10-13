@@ -39,6 +39,3 @@ def main():
 
 
 main()
-
-# sdasd
-# asdsds
