@@ -38,4 +38,5 @@ def main():
     print_birthday_info(number_of_days)
 
 
-main()
+if __name__ == '__main__':
+    main()
